@@ -7,6 +7,7 @@ export default class Mapple extends Plugin {
 			name: 'Map',
 			icon: 'lucide-map',
 			factory: (controller, containerEl) => new MapView(controller, containerEl),
+			options: MapView.getViewOptions
 		});
 	}
 
